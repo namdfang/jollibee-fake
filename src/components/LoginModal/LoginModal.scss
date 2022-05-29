@@ -1,0 +1,48 @@
+@import "../../assets/scss/variables";
+$facebook_color: #0071bc;
+
+.modal-top {
+  background-color: $main_color;
+  img {
+    width: 120px;
+  }
+  input {
+    width: 350px;
+    outline: none;
+    margin: 5px 0;
+    padding: 5px 10px;
+  }
+}
+
+.modal-bottom {
+  background-color: $yellow_color;
+  .btn-login {
+    background-color: $main_color;
+    color: $white_color;
+  }
+  .btn-social {
+    width: 350px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .btn-google {
+    background-color: $main_color;
+  }
+  .btn-facebook {
+    background-color: $facebook_color;
+  }
+  p:last-child {
+    font-size: 12px;
+  }
+}
+
+.btn-hidden {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 40px;
+    cursor: pointer;
+    path {
+        color: $yellow_color;
+    }
+}

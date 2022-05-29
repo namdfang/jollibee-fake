@@ -1,0 +1,137 @@
+@import "../../assets/scss/variables";
+.swiper {
+  position: relative;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
+  .swiper-slide {
+    img {
+      cursor: pointer;
+      width: 100%;
+    }
+  }
+  .btn-order {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: $yellow_color;
+    color: $brown_color;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    &:hover {
+      color: $white_color;
+    }
+  }
+}
+
+.food {
+  height: 589px;
+  overflow: hidden;
+  &-text {
+    background-color: $red_color;
+    img {
+      width: 133px;
+    }
+  }
+  &-item {
+    position: relative;
+    background-image: url("https://jollibee.com.vn/images/menu/today/bg-wood.jpg");
+    padding: 0;
+    margin: 0 8px;
+    & > img {
+      width: 100%;
+      margin-top: 150px;
+    }
+    &:hover .item-title {
+      transform: translateY(0);
+    }
+    .item-title {
+      position: absolute;
+      bottom: 0;
+      background-color: $main_color;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      transform: translateY(65px);
+      transition: 0.5s;
+      img {
+        width: 152px;
+        height: 40px;
+      }
+      button {
+        background-color: $yellow_color;
+        color: $brown_color;
+        transition: 0.5s;
+        letter-spacing: 2px;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+      }
+    }
+  }
+}
+
+.service {
+  background-image: url("https://jollibee.com.vn/images/home/jollibee-kid-party-bg.png");
+  font-weight: 800;
+  color: $brown_color;
+  h3 {
+    color: $main_color;
+    font-weight: 800;
+  }
+  ul {
+    .image {
+      height: 360px;
+    }
+    button {
+      background-color: $main_color;
+      color: $white_color;
+      font-weight: 800;
+      font-size: $font_size_14;
+      transition: 0.5s;
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+      &:hover{
+        background-color: $yellow_color;
+        color: $main_color;
+      }
+    }
+  }
+}
+
+.commit {
+  background-image: url("https://jollibee.com.vn/images/home/about_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 560px;
+  h3 {
+    color: $main_color;
+  }
+  p {
+    width: 560px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  button {
+    background-color: $main_color;
+    color: $white_color;
+    font-weight: 800;
+    &:hover {
+      background-color: #e31c3d;
+      color: $white_color;
+    }
+  }
+}
+
+.news {
+  h3 {
+    color: $main_color; 
+    font-weight: 800;
+  }
+  button {
+    background-color: $main_color;
+    color: $white_color;
+    font-weight: 800;
+    &:hover {
+      background-color: #e31c3d;
+      color: $white_color;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+@import "../../assets/scss/variables";
+$hover_color: #f4d2d6;
+
+.navbar {
+  background-color: $main_color;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.3);
+  &-logo {
+    img {
+      width: 100px;
+    }
+  }
+  &-menu-top {
+    margin-top: 20px;
+    cursor: pointer;
+    img {
+      width: 30px;
+    }
+    span {
+      font-size: 12px;
+    }
+  }
+  &-menu-bottom {
+    color: $white_color;
+    &>a {
+      font-size: 13px;
+      font-weight: 800;
+      padding: 13px 5px;
+      margin: 0 8px;
+      border-top-right-radius: $font_size_14;
+      border-top-left-radius: $font_size_14;
+      &:hover {
+        cursor: pointer;
+        background-color: $hover_color;
+        color: $main_color !important;
+      }
+    }
+    .menu-food:hover .menu-hover {
+      display: flex!important;
+      z-index: 100000;
+    }
+  }
+  .avatar {
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+  }
+}
+
+.menu-hover {
+  display: none!important;
+  left: -200px;
+  background-color: $hover_color;
+  margin-top: 13px;
+  border-bottom-left-radius: $font_size_14;
+  border-bottom-right-radius: $font_size_14;
+  &-item {
+    img {
+      width: 105px;
+      padding: 10px 0;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+    P {
+      font-size: 10px;
+    }
+  }
+}

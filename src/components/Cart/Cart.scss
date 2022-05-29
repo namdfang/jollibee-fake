@@ -1,0 +1,56 @@
+@import "../../assets/scss/variables";
+
+.cart {
+  position: fixed;
+  right: 100px;
+  bottom: 0;
+  z-index: 1100;
+  &-small {
+    background-color: $yellow_color;
+    width: 280px;
+    height: 60px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    cursor: pointer;
+    .icon {
+      transition: 0.2s;
+      path {
+        font-weight: 900;
+      }
+    }
+    &:hover .icon{
+      transform: scale(1.2);
+    }
+  }
+  &-big {
+    background-color: $yellow_color;
+    width: 530px;
+    min-height: 390px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    .btn-hidden-big-cart {
+      color: $red_color;
+      cursor: pointer;
+    }
+    .icon-delete {
+      position: absolute;
+      top: 0;
+      right: 0;
+      cursor: pointer;
+      color: $main_color;
+    }
+    .cart-item {
+      border-bottom: 1px dashed #fff;
+      p:nth-child(2) {
+        color: $main_color;
+      }
+    }
+    .btn-pay {
+      background-color: $red_color;
+      color: $white_color;
+      &:hover {
+        background-color: $main_color;
+      }
+    }
+  }
+}
